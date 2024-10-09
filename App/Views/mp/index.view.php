@@ -28,12 +28,13 @@
         </thead>
         <tbody>
 
+        <?php foreach($params['llista'] as $mp) : ?>
             <tr>
-                <td> id del mp</td>
-                <td> num mp</td>
-                <td> nom mp</td>
+                <td><?php echo $mp['id'] ?></td>
+                <td><?php echo $mp['num_mp'] ?></td>
+                <td><?php echo $mp['nom_mp'] ?></td>
             </tr>
-
+        <?php endforeach; ?>
 
 
         </tbody>
